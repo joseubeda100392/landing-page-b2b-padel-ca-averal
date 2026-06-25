@@ -85,12 +85,20 @@ const server = http.createServer((req, res) => {
     });
     return;
   }
-  // Cualquier otra ruta → index.html
-  const filePath = path.join(__dirname, 'index.html');
-  fs.readFile(filePath, (err, data) => {
+
+  // Páginas estáticas
+  const PAGES = {
+    '/aviso-legal':    'aviso-legal.html',
+    '/privacidad':     'privacidad.html',
+    '/quienes-somos':  'quienes-somos.html',
+  };
+  const page = PAGES[req.url.split('?')[0]];
+  const htmlFile = page || 'index.html';
+
+  fs.readFile(path.join(__dirname, htmlFile), (err, data) => {
     if (err) {
-      res.writeHead(500);
-      res.end('Error loading page');
+      res.writeHead(page ? 404 : 500);
+      res.end(page ? 'Página no encontrada' : 'Error loading page');
       return;
     }
     res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
