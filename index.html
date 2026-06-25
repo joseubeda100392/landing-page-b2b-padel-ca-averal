@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Padel Cañaveral B2B | Acceso Profesional</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800&amp;family=Inter:wght@400;500&amp;family=Geist:wght@600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-effect {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .bento-card:hover .icon-animate {
+            transform: scale(1.1) rotate(5deg);
+        }
+        .momentum-btn {
+            transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.2s ease, background-color 0.2s ease;
+        }
+        .momentum-btn:hover {
+            transform: scale(1.05);
+        }
+        .glow-card {
+            transition: all 0.3s ease;
+        }
+        .glow-card:hover {
+            box-shadow: 0 0 20px rgba(0, 114, 188, 0.15);
+            border-color: rgba(0, 114, 188, 0.4);
+            transform: translateY(-2px);
+        }
+    </style>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "surface-container-highest": "#e0e3e5",
+                "on-primary-fixed-variant": "#00497c",
+                "tertiary": "#575656",
+                "outline": "#717882",
+                "surface": "#f7fafc",
+                "surface-variant": "#e0e3e5",
+                "tertiary-fixed-dim": "#c8c6c5",
+                "on-tertiary-fixed": "#1c1b1b",
+                "inverse-on-surface": "#eef1f3",
+                "on-secondary-fixed": "#291800",
+                "on-tertiary": "#ffffff",
+                "on-tertiary-fixed-variant": "#474746",
+                "primary-fixed": "#d1e4ff",
+                "on-background": "#181c1e",
+                "inverse-surface": "#2d3133",
+                "on-tertiary-container": "#f5f2f1",
+                "primary-container": "#0072bc",
+                "on-surface-variant": "#404751",
+                "surface-container-lowest": "#ffffff",
+                "tertiary-fixed": "#e5e2e1",
+                "on-secondary-fixed-variant": "#633f00",
+                "on-primary-container": "#ecf3ff",
+                "surface-bright": "#f7fafc",
+                "tertiary-container": "#6f6e6e",
+                "on-error": "#ffffff",
+                "on-secondary-container": "#6e4700",
+                "on-primary-fixed": "#001d35",
+                "secondary-fixed": "#ffddb4",
+                "inverse-primary": "#9dcaff",
+                "surface-container": "#ebeef0",
+                "surface-container-high": "#e5e9eb",
+                "on-surface": "#181c1e",
+                "surface-container-low": "#f1f4f6",
+                "error": "#ba1a1a",
+                "secondary-fixed-dim": "#ffb953",
+                "on-primary": "#ffffff",
+                "error-container": "#ffdad6",
+                "surface-tint": "#0062a2",
+                "primary-fixed-dim": "#9dcaff",
+                "secondary-container": "#feb23d",
+                "primary": "#005994",
+                "on-secondary": "#ffffff",
+                "background": "#f7fafc",
+                "surface-dim": "#d7dadc",
+                "secondary": "#825500",
+                "outline-variant": "#c0c7d3",
+                "on-error-container": "#93000a"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem"
+        },
+        "spacing": {
+                "section-padding-mobile": "64px",
+                "base": "8px",
+                "container-max-width": "1280px",
+                "section-padding-desktop": "120px",
+                "gutter": "24px"
+        },
+        "fontFamily": {
+                "display-lg": [
+                        "Hanken Grotesk"
+                ],
+                "headline-md": [
+                        "Hanken Grotesk"
+                ],
+                "headline-lg-mobile": [
+                        "Hanken Grotesk"
+                ],
+                "headline-lg": [
+                        "Hanken Grotesk"
+                ],
+                "label-sm": [
+                        "Geist"
+                ],
+                "body-md": [
+                        "Inter"
+                ],
+                "body-lg": [
+                        "Inter"
+                ]
+        },
+        "fontSize": {
+                "display-lg": [
+                        "56px",
+                        {
+                                "lineHeight": "1.1",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "800"
+                        }
+                ],
+                "headline-md": [
+                        "24px",
+                        {
+                                "lineHeight": "1.3",
+                                "fontWeight": "600"
+                        }
+                ],
+                "headline-lg-mobile": [
+                        "32px",
+                        {
+                                "lineHeight": "1.2",
+                                "fontWeight": "700"
+                        }
+                ],
+                "headline-lg": [
+                        "40px",
+                        {
+                                "lineHeight": "1.2",
+                                "fontWeight": "700"
+                        }
+                ],
+                "label-sm": [
+                        "12px",
+                        {
+                                "lineHeight": "1.2",
+                                "letterSpacing": "0.05em",
+                                "fontWeight": "600"
+                        }
+                ],
+                "body-md": [
+                        "16px",
+                        {
+                                "lineHeight": "1.5",
+                                "fontWeight": "400"
+                        }
+                ],
+                "body-lg": [
+                        "18px",
+                        {
+                                "lineHeight": "1.6",
+                                "fontWeight": "400"
+                        }
+                ]
+        }
+},
+    },
+  }
+</script>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased selection:bg-primary/30 selection:text-primary">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl border-b border-outline-variant/50 transition-all duration-300 shadow-sm">
+<div class="max-w-container-max mx-auto flex justify-between items-center h-24 px-gutter">
+<div class="cursor-pointer hover:opacity-80 transition-opacity flex items-center">
+<img alt="Padel Cañaveral B2B" class="h-16 w-auto object-contain" src="/img/logo.webp"/>
+</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-sm" href="#segments">Clubs</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-sm" href="#segments">Monitores</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-sm" href="#segments">Academias</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-sm" href="#segments">Creadores</a>
+<a class="bg-primary hover:bg-primary-container text-on-primary px-6 py-2.5 rounded-lg font-label-sm momentum-btn border border-primary/20 shadow-md" href="#access-form">Solicitar Acceso</a>
+</div>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-primary p-2 hover:bg-surface-container rounded-lg transition-colors">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative min-h-[90vh] flex items-center overflow-hidden bg-surface-container-lowest">
+<!-- Sophisticated Background Gradient -->
+<div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-primary-container/10 via-background to-background z-0"></div>
+<div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjEiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4wNSkiLz48L3N2Zz4=')] opacity-10 z-0"></div>
+<div class="max-w-container-max mx-auto px-gutter relative z-10 py-28">
+<div class="max-w-4xl space-y-8">
+<div class="inline-flex items-center gap-2 bg-surface-container border border-outline-variant/50 px-4 py-1.5 rounded-full shadow-sm">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-secondary tracking-wider uppercase">Programa Profesional B2B</span>
+</div>
+<h1 class="font-display-lg text-[48px] md:text-[56px] text-on-surface leading-tight" style="font-weight:800;letter-spacing:-0.02em;">
+  Accede a <span class="text-primary italic">precios profesionales</span> en material de pádel
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl leading-relaxed text-[18px]">
+  En Padel Cañaveral trabajamos cada día con jugadores, clubes y profesionales del sector. Por eso hemos creado nuestro programa B2B de pádel, una plataforma de acceso exclusivo para clubes, monitores, academias y creadores de contenido que necesitan comprar material de pádel con condiciones especiales.
+</p>
+<p class="font-body-lg text-on-surface-variant max-w-3xl leading-relaxed">
+  Si gestionas un club, impartes clases, organizas eventos o generas contenido relacionado con el pádel, puedes solicitar acceso a tarifas profesionales y ventajas exclusivas.
+</p>
+<div class="flex flex-wrap gap-4 pt-4">
+<a class="bg-primary hover:bg-primary-container text-on-primary px-8 py-4 rounded-xl font-label-sm momentum-btn flex items-center gap-2 shadow-md shadow-primary/20 text-[16px]" href="#access-form">
+  Solicitar acceso profesional
+  <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+<a class="px-8 py-4 rounded-xl font-label-sm border border-outline-variant text-on-surface hover:bg-surface-container transition-colors flex items-center gap-2 text-[16px]" href="#segments">
+  ¿Quién puede acceder?
+  <span class="material-symbols-outlined">expand_more</span>
+</a>
+</div>
+<div class="flex flex-wrap gap-8 pt-6 border-t border-outline-variant/30">
+<div class="flex items-center gap-2">
+  <span class="material-symbols-outlined text-primary" style="font-variation-settings:'FILL' 1;">check_circle</span>
+  <span class="font-label-sm text-on-surface-variant">Verificación en 48h</span>
+</div>
+<div class="flex items-center gap-2">
+  <span class="material-symbols-outlined text-primary" style="font-variation-settings:'FILL' 1;">check_circle</span>
+  <span class="font-label-sm text-on-surface-variant">Sin compromiso de compra mínima</span>
+</div>
+<div class="flex items-center gap-2">
+  <span class="material-symbols-outlined text-primary" style="font-variation-settings:'FILL' 1;">check_circle</span>
+  <span class="font-label-sm text-on-surface-variant">Atención personalizada</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Segments Bento Grid -->
+<section class="py-32 bg-surface" id="segments">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="text-center mb-16 space-y-4">
+<h2 class="font-headline-lg text-[40px] md:text-headline-lg text-on-surface italic">¿Quién puede acceder?</h2>
+<p class="font-body-lg text-on-surface-variant max-w-2xl mx-auto">Si gestionas un club, impartes clases, organizas eventos o generas contenido relacionado con el pádel, puedes solicitar acceso a tarifas profesionales y ventajas exclusivas.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Clubs -->
+<div class="group relative overflow-hidden rounded-3xl border border-outline-variant/50 transition-all hover:border-primary/50 bg-surface-container-lowest glow-card shadow-sm hover:shadow-md flex flex-col p-8 min-h-[340px]">
+<div class="bg-primary/10 text-primary w-14 h-14 rounded-xl flex items-center justify-center mb-6 border border-primary/20 group-hover:bg-primary/20 transition-colors">
+  <span class="material-symbols-outlined text-3xl">sports_tennis</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-3 text-primary">Clubes de pádel</h3>
+<p class="font-body-md text-sm text-on-surface-variant mb-5 leading-relaxed">Equipamos clubes de todos los tamaños con acceso preferente a palas, zapatillas, textil, pelotas y accesorios de las principales marcas del mercado.</p>
+<ul class="text-sm text-on-surface-variant font-body-md space-y-1 mt-auto">
+  <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-base" style="font-variation-settings:'FILL' 1;">check_circle</span>Clubes de pádel</li>
+  <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-base" style="font-variation-settings:'FILL' 1;">check_circle</span>Centros deportivos</li>
+  <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-base" style="font-variation-settings:'FILL' 1;">check_circle</span>Escuelas deportivas</li>
+  <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-base" style="font-variation-settings:'FILL' 1;">check_circle</span>Organizadores de torneos</li>
+</ul>
+</div>
+<!-- Monitores -->
+<div class="group relative overflow-hidden rounded-3xl border border-outline-variant/50 transition-all hover:border-secondary/50 bg-surface-container-lowest glow-card shadow-sm hover:shadow-md flex flex-col p-8 min-h-[340px]">
+<div class="bg-secondary/10 text-secondary w-14 h-14 rounded-xl flex items-center justify-center mb-6 border border-secondary/20 group-hover:bg-secondary/20 transition-colors">
+  <span class="material-symbols-outlined text-3xl">groups</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-3 text-secondary">Monitores y Entrenadores</h3>
+<p class="font-body-md text-sm text-on-surface-variant mb-5 leading-relaxed">Los entrenadores son una figura clave dentro del crecimiento del pádel. Ofrecemos ventajas específicas para monitores y profesores que recomiendan material a sus alumnos.</p>
+<ul class="text-sm text-on-surface-variant font-body-md space-y-1 mt-auto">
+  <li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-base" style="font-variation-settings:'FILL' 1;">check_circle</span>Descuentos exclusivos</li>
+  <li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-base" style="font-variation-settings:'FILL' 1;">check_circle</span>Asesoramiento personalizado</li>
+  <li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-base" style="font-variation-settings:'FILL' 1;">check_circle</span>Acceso prioritario a novedades</li>
+  <li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-base" style="font-variation-settings:'FILL' 1;">check_circle</span>Condiciones especiales para grupos</li>
+</ul>
+</div>
+<!-- Academias -->
+<div class="group relative overflow-hidden rounded-3xl border border-outline-variant/50 transition-all hover:border-primary bg-surface-container-lowest glow-card shadow-sm hover:shadow-md flex flex-col p-8 min-h-[340px]">
+<div class="bg-primary/10 text-primary w-14 h-14 rounded-xl flex items-center justify-center mb-6 border border-primary/20 group-hover:bg-primary/20 transition-colors">
+  <span class="material-symbols-outlined text-3xl">school</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-3 text-on-surface">Academias y Escuelas</h3>
+<p class="font-body-md text-sm text-on-surface-variant mb-5 leading-relaxed">Si gestionas una escuela o academia, podemos ayudarte a equipar a tus alumnos con las mejores condiciones posibles.</p>
+<ul class="text-sm text-on-surface-variant font-body-md space-y-1 mt-auto">
+  <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-base" style="font-variation-settings:'FILL' 1;">check_circle</span>Escuelas de iniciación</li>
+  <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-base" style="font-variation-settings:'FILL' 1;">check_circle</span>Academias de competición</li>
+  <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-base" style="font-variation-settings:'FILL' 1;">check_circle</span>Programas de tecnificación</li>
+  <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-base" style="font-variation-settings:'FILL' 1;">check_circle</span>Campus de verano</li>
+</ul>
+</div>
+<!-- Creadores -->
+<div class="group relative overflow-hidden rounded-3xl border border-outline-variant/50 transition-all hover:border-primary/50 bg-surface-container-lowest glow-card shadow-sm hover:shadow-md flex flex-col p-8 min-h-[340px]">
+<div class="bg-primary/10 text-primary w-14 h-14 rounded-xl flex items-center justify-center mb-6 border border-primary/20 group-hover:bg-primary/20 transition-colors">
+  <span class="material-symbols-outlined text-3xl">campaign</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-3 text-on-surface">Creadores e Influencers</h3>
+<p class="font-body-md text-sm text-on-surface-variant mb-5 leading-relaxed">Colaboramos con perfiles que ayudan a difundir el pádel a través de redes sociales, YouTube, podcasts o medios especializados.</p>
+<p class="text-sm text-on-surface-variant font-body-md mt-auto leading-relaxed">Buscamos colaboraciones a largo plazo basadas en valor real para ambas partes.</p>
+</div>
+</div>
+</section>
+<!-- Advantages Section -->
+<section class="py-32 bg-surface-container-low">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="flex flex-col lg:flex-row justify-between items-end mb-16 gap-8">
+<div class="max-w-2xl">
+<h2 class="font-headline-lg text-[40px] md:text-headline-lg text-on-surface italic mb-6">Ventajas del programa B2B de Padel Cañaveral</h2>
+<p class="font-body-lg text-on-surface-variant leading-relaxed">Diseñado para profesionales del pádel que necesitan las mejores condiciones para hacer crecer su actividad.</p>
+</div>
+<div class="h-[1px] flex-grow bg-gradient-to-r from-outline-variant/30 via-outline-variant/50 to-outline-variant/30 hidden lg:block mb-6 mx-8"></div>
+<div class="bg-surface-container-lowest p-5 rounded-2xl border border-outline-variant/50 shadow-md">
+<div class="flex items-center gap-3 mb-1">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-secondary uppercase tracking-widest">Disponibilidad</span>
+</div>
+<span class="font-headline-md text-on-surface block">Stock Garantizado</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+<!-- Advantage Cards -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/50 glow-card group shadow-sm hover:shadow-md">
+<div class="bg-primary/10 w-14 h-14 rounded-xl flex items-center justify-center text-primary mb-6 border border-primary/20 group-hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-3xl" data-weight="fill">payments</span>
+</div>
+<h4 class="font-headline-md text-lg text-on-surface mb-3">Precios profesionales</h4>
+<p class="font-body-md text-sm text-on-surface-variant leading-relaxed">Accede a descuentos exclusivos sobre cientos de referencias de pádel.</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/50 glow-card group shadow-sm hover:shadow-md">
+<div class="bg-primary/10 w-14 h-14 rounded-xl flex items-center justify-center text-primary mb-6 border border-primary/20 group-hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-3xl" data-weight="fill">support_agent</span>
+</div>
+<h4 class="font-headline-md text-lg text-on-surface mb-3">Atención personalizada</h4>
+<p class="font-body-md text-sm text-on-surface-variant leading-relaxed">Un equipo especializado te ayudará a elegir el material más adecuado para tu proyecto.</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/50 glow-card group shadow-sm hover:shadow-md">
+<div class="bg-primary/10 w-14 h-14 rounded-xl flex items-center justify-center text-primary mb-6 border border-primary/20 group-hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-3xl" data-weight="fill">inventory_2</span>
+</div>
+<h4 class="font-headline-md text-lg text-on-surface mb-3">Amplio catálogo</h4>
+<p class="font-body-md text-sm text-on-surface-variant leading-relaxed">Trabajamos con las principales marcas del sector para ofrecer una selección completa de productos.</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/50 glow-card group shadow-sm hover:shadow-md">
+<div class="bg-primary/10 w-14 h-14 rounded-xl flex items-center justify-center text-primary mb-6 border border-primary/20 group-hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-3xl" data-weight="fill">local_shipping</span>
+</div>
+<h4 class="font-headline-md text-lg text-on-surface mb-3">Rapidez y disponibilidad</h4>
+<p class="font-body-md text-sm text-on-surface-variant leading-relaxed">Gestionamos pedidos de forma ágil para que puedas centrarte en lo importante: hacer crecer tu actividad.</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/50 glow-card group shadow-sm hover:shadow-md">
+<div class="bg-primary/10 w-14 h-14 rounded-xl flex items-center justify-center text-primary mb-6 border border-primary/20 group-hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-3xl" data-weight="fill">handshake</span>
+</div>
+<h4 class="font-headline-md text-lg text-on-surface mb-3">Colaboraciones a medida</h4>
+<p class="font-body-md text-sm text-on-surface-variant leading-relaxed">Cada club, monitor o creador tiene necesidades diferentes. Adaptamos nuestras condiciones a cada perfil.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Us Section -->
+<section class="relative py-32 overflow-hidden bg-surface">
+<div class="max-w-container-max mx-auto px-gutter relative z-10">
+<div class="bg-surface-container-lowest rounded-[40px] p-12 lg:p-24 overflow-hidden relative border border-outline-variant/50 shadow-xl">
+<!-- Decorative gradient -->
+<div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-primary/5 to-transparent opacity-50"></div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">
+<div class="space-y-10">
+<h2 class="font-headline-lg text-[40px] md:text-headline-lg text-on-surface italic">Por qué trabajar con Padel Cañaveral</h2>
+<p class="font-body-lg text-on-surface-variant leading-relaxed">
+                                Somos una empresa especializada exclusivamente en pádel. Conocemos el sector desde dentro y entendemos las necesidades reales de clubes, entrenadores y profesionales.
+                            </p>
+<p class="font-body-lg text-on-surface-variant leading-relaxed">
+                                Nuestro objetivo no es únicamente vender material, sino convertirnos en un partner de confianza para ayudarte a crecer. Tanto si gestionas un club, diriges una academia o tienes una comunidad de jugadores en redes sociales, queremos construir una relación a largo plazo basada en la confianza, el servicio y las mejores condiciones posibles.
+                            </p>
+<div class="flex gap-12 border-t border-outline-variant/30 pt-10">
+<div>
+<p class="text-5xl font-bold font-headline-lg text-primary mb-2">100%</p>
+<p class="font-label-sm text-on-surface-variant uppercase tracking-wider">Enfoque Pádel</p>
+</div>
+<div>
+<p class="text-5xl font-bold font-headline-lg text-primary mb-2">+10k</p>
+<p class="font-label-sm text-on-surface-variant uppercase tracking-wider">Productos</p>
+</div>
+</div>
+</div>
+<div class="relative">
+<div class="absolute -inset-4 bg-gradient-to-r from-primary/10 to-secondary/10 blur-2xl rounded-full opacity-50"></div>
+<div class="bg-surface-container-lowest/90 backdrop-blur-xl rounded-3xl p-10 border border-outline-variant/50 relative shadow-lg">
+<span class="material-symbols-outlined text-secondary text-5xl mb-6 block">format_quote</span>
+<p class="font-body-lg text-on-surface mb-8 italic leading-relaxed">"Padel Cañaveral ha transformado la forma en que gestionamos el stock de nuestra academia. Su asesoramiento técnico es inigualable y la respuesta es siempre inmediata."</p>
+<div class="flex items-center gap-5">
+<div class="w-14 h-14 rounded-full bg-surface border-2 border-outline-variant/50 bg-cover bg-center" data-alt="Close up of a professional male coach smiling" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC98v-4ONgw98nYLAhLLHTp5UioBPIwdnwOLQl5r1odwBrjl4vbvt1nEHMAw4WvsdIoWtquixOG7Rccuy7_7Jo8cBoFZzg2U8AB6JcZBDNcfTDY-TgUXLoLTETuMDJ3rC5DHt-E1v7eTTdpuyjncHWWjo8y8uhbFEjDLw9-FGPsi8je3ipjIjcZGRDEDRGt_jFmhtIALf1RKANPTqxONt-jd6L8x24pKW7zZQq2sUfZKeK-t-u7PLvElCsgLrtgmjxeMWNiSwwNWP1X')"></div>
+<div>
+<p class="font-label-sm text-on-surface text-[16px]">Carlos Rodríguez</p>
+<p class="font-body-md text-sm text-primary mt-1">Director Técnico - Elite Padel</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Form Section -->
+<section class="py-32 bg-surface-container-low" id="access-form">
+<div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+<div class="lg:col-span-5 space-y-8 sticky top-32">
+<div>
+<h2 class="font-headline-lg text-[40px] md:text-headline-lg text-on-surface italic mb-6">Solicita tu acceso profesional</h2>
+<p class="font-body-lg text-on-surface-variant leading-relaxed">Rellena el formulario y nuestro equipo revisará tu solicitud. Una vez validada, podrás acceder a condiciones especiales adaptadas a tu perfil.</p>
+</div>
+<ul class="space-y-6 pt-4">
+<li class="flex gap-4 items-start">
+<div class="bg-primary/10 p-2 rounded-lg border border-primary/20 text-primary mt-1">
+<span class="material-symbols-outlined text-xl">verified</span>
+</div>
+<div class="space-y-1">
+<p class="font-headline-md text-lg text-on-surface text-[18px]">Verificación rápida</p>
+<p class="font-body-md text-sm text-on-surface-variant">Validamos tu perfil profesional ágilmente.</p>
+</div>
+</li>
+<li class="flex gap-4 items-start">
+<div class="bg-primary/10 p-2 rounded-lg border border-primary/20 text-primary mt-1">
+<span class="material-symbols-outlined text-xl">dashboard_customize</span>
+</div>
+<div class="space-y-1">
+<p class="font-headline-md text-lg text-on-surface text-[18px]">Plataforma exclusiva</p>
+<p class="font-body-md text-sm text-on-surface-variant">Acceso a portal de pedidos personalizado.</p>
+</div>
+</li>
+<li class="flex gap-4 items-start">
+<div class="bg-primary/10 p-2 rounded-lg border border-primary/20 text-primary mt-1">
+<span class="material-symbols-outlined text-xl">lock_open</span>
+</div>
+<div class="space-y-1">
+<p class="font-headline-md text-lg text-on-surface text-[18px]">Sin ataduras</p>
+<p class="font-body-md text-sm text-on-surface-variant">Sin compromiso de compra mínima inicial.</p>
+</div>
+</li>
+</ul>
+<div class="mt-12 p-8 rounded-2xl bg-surface-container-lowest border border-outline-variant/50 flex items-start gap-4 shadow-sm">
+<span class="material-symbols-outlined text-primary text-3xl">help</span>
+<div>
+<p class="font-label-sm text-on-surface text-[16px] mb-2">¿Tienes dudas?</p>
+<p class="font-body-md text-sm text-on-surface-variant mb-4">Contacta directamente con nuestro departamento B2B.</p>
+<a class="text-primary font-label-sm hover:text-primary-container transition-colors flex items-center gap-2" href="mailto:padel@padelcanaveral.com">
+                                padel@padelcanaveral.com
+                                <span class="material-symbols-outlined text-sm">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7">
+<div class="bg-surface-container-lowest p-8 lg:p-12 rounded-[32px] border border-outline-variant/50 shadow-xl relative overflow-hidden">
+<!-- Glow effect behind form -->
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
+<form class="grid grid-cols-1 md:grid-cols-2 gap-6 relative z-10">
+<div class="md:col-span-2">
+<label class="block font-label-sm text-on-surface mb-2">Nombre del Negocio / Profesional</label>
+<input name="negocio" class="w-full bg-surface border-outline-variant text-on-surface rounded-xl px-4 py-3.5 focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all placeholder:text-outline" placeholder="Ej. Padel Club Madrid o Juan Pérez Monitor" type="text" required/>
+</div>
+<div>
+<label class="block font-label-sm text-on-surface mb-2">Persona de Contacto</label>
+<input name="contacto" class="w-full bg-surface border-outline-variant text-on-surface rounded-xl px-4 py-3.5 focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all placeholder:text-outline" placeholder="Nombre completo" type="text" required/>
+</div>
+<div>
+<label class="block font-label-sm text-on-surface mb-2">Correo Electrónico</label>
+<input name="email" class="w-full bg-surface border-outline-variant text-on-surface rounded-xl px-4 py-3.5 focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all placeholder:text-outline" placeholder="email@profesional.com" type="email" required/>
+</div>
+<div>
+<label class="block font-label-sm text-on-surface mb-2">Tipo de Perfil</label>
+<select name="tipo" class="w-full bg-surface border-outline-variant text-on-surface rounded-xl px-4 py-3.5 focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all">
+<option class="bg-surface-container-lowest">Club de Pádel</option>
+<option class="bg-surface-container-lowest">Monitor Autónomo</option>
+<option class="bg-surface-container-lowest">Academia / Escuela</option>
+<option class="bg-surface-container-lowest">Creador de Contenido</option>
+<option class="bg-surface-container-lowest">Otro</option>
+</select>
+</div>
+<div>
+<label class="block font-label-sm text-on-surface mb-2">Teléfono</label>
+<input name="telefono" class="w-full bg-surface border-outline-variant text-on-surface rounded-xl px-4 py-3.5 focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all placeholder:text-outline" placeholder="+34 000 000 000" type="tel"/>
+</div>
+<div class="md:col-span-2">
+<label class="block font-label-sm text-on-surface mb-2">Comentarios (Opcional)</label>
+<textarea name="comentarios" class="w-full bg-surface border-outline-variant text-on-surface rounded-xl px-4 py-3.5 focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all placeholder:text-outline resize-none" placeholder="Cuéntanos un poco más sobre tu actividad..." rows="4"></textarea>
+</div>
+<div class="md:col-span-2 flex items-start gap-3 mt-2">
+<input class="rounded border-outline-variant bg-surface text-primary focus:ring-primary/50 mt-1" id="privacy" type="checkbox"/>
+<label class="font-body-md text-sm text-on-surface-variant leading-relaxed cursor-pointer" for="privacy">Acepto la política de privacidad y el tratamiento de mis datos para fines comerciales B2B.</label>
+</div>
+<div class="md:col-span-2 mt-6">
+<button class="w-full bg-primary hover:bg-primary-container text-on-primary py-4 rounded-xl font-label-sm text-[18px] momentum-btn shadow-md shadow-primary/20 border border-primary/20" type="submit">
+                                    Enviar solicitud de acceso
+                                </button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low border-t border-outline-variant/50 w-full py-16">
+<div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-1 space-y-6">
+<div class="mb-6">
+<img alt="Padel Cañaveral" class="h-20 w-auto object-contain" src="/img/logo.webp"/>
+</div>
+<p class="text-on-surface-variant font-body-md text-sm leading-relaxed max-w-xs">Tu partner especializado en el mundo del pádel profesional. Construyendo el futuro del deporte.</p>
+</div>
+<div class="space-y-6">
+<h4 class="font-label-sm text-on-surface text-[16px]">Enlaces</h4>
+<ul class="space-y-3">
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-sm" href="#">Condiciones B2B</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-sm" href="#">Política de Privacidad</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-sm" href="#">Aviso Legal</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h4 class="font-label-sm text-on-surface text-[16px]">Soporte</h4>
+<ul class="space-y-3">
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-sm" href="#">Contacto B2B</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-sm" href="#">Soporte Técnico</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-sm" href="#">Preguntas Frecuentes</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h4 class="font-label-sm text-on-surface text-[16px]">Comunidad</h4>
+<div class="flex gap-4">
+<a class="w-12 h-12 rounded-full bg-surface-container-lowest border border-outline-variant/50 flex items-center justify-center text-on-surface-variant hover:bg-primary/10 hover:text-primary hover:border-primary/30 transition-all shadow-sm" href="#">
+<span class="material-symbols-outlined">language</span>
+</a>
+<a class="w-12 h-12 rounded-full bg-surface-container-lowest border border-outline-variant/50 flex items-center justify-center text-on-surface-variant hover:bg-primary/10 hover:text-primary hover:border-primary/30 transition-all shadow-sm" href="#">
+<span class="material-symbols-outlined">mail</span>
+</a>
+</div>
+</div>
+<div class="col-span-1 md:col-span-4 mt-8 pt-8 border-t border-outline-variant/30 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-on-surface-variant font-body-md text-sm">© 2024 Padel Cañaveral. Todos los derechos reservados.</p>
+<p class="text-on-surface-variant font-body-md text-sm flex items-center gap-1">
+                Diseñado para profesionales <span class="material-symbols-outlined text-secondary text-sm">workspace_premium</span>
+</p>
+</div>
+</div>
+</footer>
+<script>
+        // Smooth scroll for nav links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Header background opacity on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 20) {
+                nav.classList.add('bg-surface/95', 'shadow-md');
+                nav.classList.remove('bg-surface/90', 'shadow-sm');
+            } else {
+                nav.classList.add('bg-surface/90', 'shadow-sm');
+                nav.classList.remove('bg-surface/95', 'shadow-md');
+            }
+        });
+
+        // Form Submission — envía la solicitud a Shopify vía el servidor
+        const form = document.querySelector('form');
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const btn = form.querySelector('button');
+            const originalText = btn.innerHTML;
+
+            // Validar privacidad
+            if (!form.querySelector('#privacy').checked) {
+                alert('Debes aceptar la política de privacidad para continuar.');
+                return;
+            }
+
+            btn.innerHTML = '<span class="material-symbols-outlined animate-spin mr-2">progress_activity</span> Procesando...';
+            btn.disabled = true;
+            btn.classList.add('opacity-80');
+
+            const data = {
+                negocio:     form.negocio.value.trim(),
+                contacto:    form.contacto.value.trim(),
+                email:       form.email.value.trim(),
+                tipo:        form.tipo.value,
+                telefono:    form.telefono.value.trim(),
+                comentarios: form.comentarios.value.trim(),
+            };
+
+            try {
+                const res = await fetch('/solicitar-acceso', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data),
+                });
+                const json = await res.json();
+
+                if (!json.ok) {
+                    throw new Error(json.error || 'Error desconocido');
+                }
+
+                btn.innerHTML = '<span class="material-symbols-outlined mr-2">check_circle</span> ¡Solicitud Enviada con Éxito!';
+                btn.classList.replace('bg-primary', 'bg-emerald-100');
+                btn.classList.replace('text-on-primary', 'text-emerald-700');
+                btn.classList.replace('border-primary/20', 'border-emerald-500/50');
+                btn.classList.remove('hover:bg-primary-container');
+                form.reset();
+
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                    btn.disabled = false;
+                    btn.classList.remove('opacity-80', 'bg-emerald-100', 'text-emerald-700', 'border-emerald-500/50');
+                    btn.classList.add('bg-primary', 'text-on-primary', 'border-primary/20', 'hover:bg-primary-container');
+                }, 4000);
+            } catch (err) {
+                btn.innerHTML = '<span class="material-symbols-outlined mr-2">error</span> Error: ' + err.message;
+                btn.classList.replace('bg-primary', 'bg-red-100');
+                btn.classList.replace('text-on-primary', 'text-red-700');
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                    btn.disabled = false;
+                    btn.classList.remove('opacity-80', 'bg-red-100', 'text-red-700');
+                    btn.classList.add('bg-primary', 'text-on-primary', 'border-primary/20', 'hover:bg-primary-container');
+                }, 4000);
+            }
+        });
+    </script>
+</body></html>

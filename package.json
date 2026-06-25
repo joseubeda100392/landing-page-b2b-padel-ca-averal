@@ -1,0 +1,7 @@
+{
+  "name": "landing-b2b-padel-canaveral",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
