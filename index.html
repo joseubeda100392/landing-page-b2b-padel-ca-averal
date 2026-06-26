@@ -13,8 +13,8 @@
     --navy:      #0A1B35;
     --navy-mid:  #1E3A5F;
     --blue:      #0061AF;
-    --amber:     #F59E0B;
-    --amber-dk:  #D97706;
+    --amber:     #0061AF;
+    --amber-dk:  #004E8C;
     --off:       #F8FAFC;
   }
 
@@ -45,8 +45,8 @@
   /* ── CTA amber glow ── */
   .amber-glow { animation: amber-pulse 2.5s ease-in-out infinite; }
   @keyframes amber-pulse {
-    0%,100% { box-shadow: 0 0 0 0 rgba(245,158,11,0); }
-    50%      { box-shadow: 0 0 20px 4px rgba(245,158,11,0.18); }
+    0%,100% { box-shadow: 0 0 0 0 rgba(0,97,175,0); }
+    50%      { box-shadow: 0 0 20px 4px rgba(0,97,175,0.25); }
   }
 
   /* ── Segment card hover ── */
@@ -104,7 +104,7 @@
           navy: '#0A1B35',
           'navy-mid': '#1E3A5F',
           blue: '#0061AF',
-          amber: '#F59E0B',
+          amber: '#0061AF',
         },
         fontFamily: {
           display: ['Ubuntu', 'sans-serif'],
@@ -130,7 +130,7 @@
       <a href="#ventajas" class="font-mono text-xs uppercase tracking-widest py-3 px-1 transition-colors" style="color:rgba(255,255,255,0.55);" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,0.55)'">Ventajas B2B</a>
     </div>
 
-    <a href="#formulario" class="amber-glow hidden md:inline-flex items-center gap-2 px-5 py-2.5 rounded-lg font-mono text-xs uppercase tracking-wider font-bold transition-opacity hover:opacity-90" style="background:var(--amber);color:#0A1B35;">
+    <a href="#formulario" class="amber-glow hidden md:inline-flex items-center gap-2 px-5 py-2.5 rounded-lg font-mono text-xs uppercase tracking-wider font-bold transition-opacity hover:opacity-90" style="background:var(--amber);color:#ffffff;">
       Solicitar acceso
     </a>
 
@@ -143,7 +143,7 @@
   <div id="mobile-menu" class="flex-col md:hidden px-5 pb-6 pt-2 gap-1" style="border-top:1px solid rgba(255,255,255,0.08);">
     <a href="#segmentos" class="font-mono text-xs uppercase tracking-widest py-3 px-2 block rounded-lg hover:bg-white/5 transition-colors" style="color:rgba(255,255,255,0.7);">¿Para quién?</a>
     <a href="#ventajas" class="font-mono text-xs uppercase tracking-widest py-3 px-2 block rounded-lg hover:bg-white/5 transition-colors" style="color:rgba(255,255,255,0.7);">Ventajas B2B</a>
-    <a href="#formulario" class="amber-glow inline-flex items-center justify-center gap-2 w-full mt-3 px-5 py-3.5 rounded-xl font-mono text-xs uppercase tracking-wider font-bold" style="background:var(--amber);color:#0A1B35;">
+    <a href="#formulario" class="amber-glow inline-flex items-center justify-center gap-2 w-full mt-3 px-5 py-3.5 rounded-xl font-mono text-xs uppercase tracking-wider font-bold" style="background:var(--amber);color:#ffffff;">
       Solicitar acceso
     </a>
   </div>
@@ -179,7 +179,7 @@
 
       <!-- CTAs -->
       <div class="flex flex-col sm:flex-row gap-4">
-        <a href="#formulario" class="amber-glow inline-flex items-center justify-center gap-2 px-7 py-4 rounded-xl font-display font-bold text-base transition-opacity hover:opacity-90" style="background:var(--amber);color:#0A1B35;">
+        <a href="#formulario" class="amber-glow inline-flex items-center justify-center gap-2 px-7 py-4 rounded-xl font-display font-bold text-base transition-opacity hover:opacity-90" style="background:var(--amber);color:#ffffff;">
           Solicitar mi acceso B2B
           <span class="material-symbols-outlined text-lg" aria-hidden="true">arrow_forward</span>
         </a>
@@ -304,7 +304,7 @@
           <h3 class="font-display text-xl font-bold text-gray-900 mb-2">Colaboraciones a largo plazo</h3>
           <p class="text-gray-500 text-base leading-relaxed">Redes, YouTube, podcasts y medios especializados. Buscamos relaciones reales, no campañas puntuales.</p>
         </div>
-        <a href="#formulario" class="flex-shrink-0 inline-flex items-center gap-2 px-5 py-3 rounded-xl font-mono text-xs uppercase tracking-wider font-bold transition-colors whitespace-nowrap" style="background:rgba(245,158,11,0.10);color:var(--amber-dk);border:1px solid rgba(245,158,11,0.25);">
+        <a href="#formulario" class="flex-shrink-0 inline-flex items-center gap-2 px-5 py-3 rounded-xl font-mono text-xs uppercase tracking-wider font-bold transition-colors whitespace-nowrap" style="background:rgba(0,97,175,0.10);color:var(--amber-dk);border:1px solid rgba(0,97,175,0.25);">
           Proponer colaboración
           <span class="material-symbols-outlined text-sm" aria-hidden="true">arrow_forward</span>
         </a>
@@ -479,7 +479,7 @@
             <label for="privacy" class="text-sm leading-relaxed cursor-pointer" style="color:#475569;">Acepto la <a href="/privacidad" target="_blank" class="underline hover:opacity-80" style="color:var(--blue);">política de privacidad</a> y el tratamiento de mis datos para fines comerciales B2B.</label>
           </div>
 
-          <button id="submit-btn" type="submit" class="w-full py-4 rounded-xl font-display font-bold text-base transition-all duration-200 hover:opacity-90 flex items-center justify-center gap-2 cursor-pointer" style="background:var(--amber);color:#0A1B35;min-height:52px;">
+          <button id="submit-btn" type="submit" class="w-full py-4 rounded-xl font-display font-bold text-base transition-all duration-200 hover:opacity-90 flex items-center justify-center gap-2 cursor-pointer" style="background:var(--amber);color:#ffffff;min-height:52px;">
             Solicitar mi acceso B2B
             <span class="material-symbols-outlined text-lg" aria-hidden="true">arrow_forward</span>
           </button>
